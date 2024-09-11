@@ -1,0 +1,25 @@
+.fileNameContainer {
+  display: flex;
+  align-items: center;
+  background-color: #edf0f3;
+  padding: 4px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  gap: 5px;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.fileCardContent {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 399px) {
+  .fileCardContent {
+    max-width: 140px;
+  }
+}

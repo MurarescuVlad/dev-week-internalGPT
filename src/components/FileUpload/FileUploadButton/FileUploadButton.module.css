@@ -1,0 +1,19 @@
+.iconActiveStyle {
+  cursor: pointer;
+}
+
+.attachButton {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  padding-left: 5px;
+}
+
+.fileInput {
+  display: none;
+}
+
+.disabledState {
+  opacity: 0.6;
+  cursor: initial;
+}
