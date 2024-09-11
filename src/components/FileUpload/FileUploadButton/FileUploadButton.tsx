@@ -8,14 +8,15 @@ import attachment from '../../../assets/attachment.png';
 
 interface IProps {
   disabled: Boolean;
+  fileInputRef: React.RefObject<HTMLInputElement>
   handleFileInputChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 const FileUploadButton = ({
   disabled,
+  fileInputRef,
   handleFileInputChange,
 }: IProps) => {
-  const fileInputRef = useRef<HTMLInputElement>(null);
 
   return (
     <div className={styles.attachButton}>
@@ -29,7 +30,8 @@ const FileUploadButton = ({
       />
       <input
         className={styles.fileInput}
-        type="file" ref={fileInputRef}
+        type="file"
+        ref={fileInputRef}
         onChange={handleFileInputChange}
         accept={supportedFileExtensions.join(', ')}
       />

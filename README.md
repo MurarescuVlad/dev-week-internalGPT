@@ -22,6 +22,12 @@ Install dependencies
   npm install
 ```
 
+Create .env.local file
+
+```bash
+  VITE_BACKEND_BASE_URL = <you will get the value at the workshop>
+```
+
 Start the server
 
 ```bash

@@ -6,8 +6,10 @@ import Send from '../../assets/Send.svg'
 
 import styles from './QuestionInput.module.css'
 import { supportedFileExtensions } from '../../constants/constants';
-import FileUploadButton from '../FileUpload/FileUploadButton/FileUploadButton';
+
 import { toast } from 'react-toastify';
+
+import FileUploadButton from '../FileUpload/FileUploadButton/FileUploadButton';
 import UploadedFile from '../FileUpload/UploadedFile/UploadedFile';
 
 interface Props {
@@ -25,9 +27,9 @@ export const QuestionInput = ({
   clearOnSend,
   conversationId,
 }: Props) => {
-  const [question, setQuestion] = useState<string>('')
+  const [question, setQuestion] = useState<string>('');
   const [currentFile, setCurrentFile] = useState<File | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null)
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
 
   const sendQuestion = () => {
@@ -96,6 +98,7 @@ export const QuestionInput = ({
         {/* FILE UPLOAD */}
         {/* <FileUploadButton
           disabled={disabled}
+          fileInputRef={fileInputRef}
           handleFileInputChange={handleFileInputChange}
         /> */}
         <TextField
