@@ -25,7 +25,7 @@ Install dependencies
 Create .env.local file
 
 ```bash
-  VITE_BACKEND_BASE_URL = <you will get the value at the workshop>
+  VITE_BACKEND_BASE_URL = <you will get the value at workshop>
 ```
 
 Start the server
